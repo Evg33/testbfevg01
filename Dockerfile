@@ -9,6 +9,3 @@ RUN apt-get update && apt-get install -y default-jdk maven git \
  && rm -rf /tmp/bf \
  && apt-get remove default-jdk maven git --purge -y \
  && apt-get autoremove --purge -y
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
-
