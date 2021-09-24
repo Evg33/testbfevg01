@@ -8,4 +8,5 @@ RUN apt-get update && apt-get install -y default-jdk maven git \
  && cd /tmp \
  && rm -rf /tmp/bf \
  && apt-get remove default-jdk maven git --purge -y \
- && apt-get autoremove --purge -y
+ && apt-get autoremove --purge -y \
+ && rm -rf /var/lib/apt/lists/*
